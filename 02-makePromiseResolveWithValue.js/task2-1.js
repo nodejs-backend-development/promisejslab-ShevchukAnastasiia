@@ -11,10 +11,9 @@
  * @returns {Promise<any>}
  */
 function makePromiseResolveWith(value) {
-    // Використовуємо статичний метод Promise.resolve()
     return Promise.resolve(value);
 }
 
 // Перевірка:
-makePromiseResolveWith(6)
-    .then(value => console.log(' Тест 2.1:', value)); // Очікується: 5
+makePromiseResolveWith(7)
+    .then(value => console.log(' Тест 2.1:', value));
